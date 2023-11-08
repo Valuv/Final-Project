@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Poppins:wght@400;600;700&display=swap');
+
+.row {
+    margin: 10%;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 0%;
+ 
+}
+
+ul {
+    text-align: end;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 15px;
+    background-color: rgba(217, 217, 217, 0.25);
+    width: 40%;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.img-background {
+    background-image: url(./Assets/Intro\ Android\ \(1\).png);
+    width: fit-content;
+    height: auto;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.image_full{
+    display:block;
+}
+ 
+.image_mobile {
+   display:none;
+
+}
+
+.carousel-box1 {
+    padding: 8%; 
+    text-align: center;
+    color: white; 
+    margin: 15%; 
+    margin-top: 30%;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.landing-title {
+    padding: 10px;
+}
+
+.landing-descrip {
+    text-align: justify;
+}
+
+.carousel-back1 {
+    background: url("./Assets/Android Landing Page 1.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.carousel-back2 {
+    background: url("./Assets/Android Landing Page 2.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.carousel-back3 {
+    background: url("./Assets/Android\ Landing\ Page\ 3.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.host-box {
+    margin: 25%;
+    margin-top: 5%;
+}
+
+.host {
+    padding: 5%;
+}
+
+.host-container {
+    margin: 20%;
+    margin-bottom: 0%;
+    color: white;
+    text-align: center;
+}
+
+.event-box {
+    color: white;
+    text-align: center;
+    
+}
+
+.event {
+    background-color: rgba(0, 0, 0, 0.80);
+    padding: 10%;
+    margin: 15%;
+}
+
+.front, back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.flip-card {
+    position: relative;
+    transition: transform 1500ms;
+}
+
+.flip-card, .flip-container {
+    height: 100%;
+    width: 100%;
+}
+
+.flip-container:hover > .flip-card {
+    transform: rotateY(180deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+@media screen and (width >= 375px) and (width < 425px) {
+
+    .host-box {
+        margin: 30%;
+        margin-top: 5%;
+    }
+
+    .event-box {
+        color: white;
+        text-align: center;
+        margin-top: 2%;
+    }
+
+}
+
+@media screen and (width >= 425px) and (width < 768px) {
+
+    .carousel-box1 {
+        padding: 11%; 
+        text-align: center;
+        color: white; 
+        margin: 15%;  
+        margin-top: 25%;
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+
+    .host-box {
+        margin: 33%;
+        margin-top: 5%;
+    }
+
+    .event-box {
+        color: white;
+        text-align: center;
+        margin-top: 0%;
+    }
+
+}
+
+
+@media screen and (width < 768px) {
+    #title {
+        padding: 10%;
+        padding-top: 20%;
+    }
+
+    #box {
+        padding: 10%; 
+        padding-top: 0%;
+    }
+
+    #descrip {
+        padding: 10%; 
+        padding-top: 0%;
+    }
+
+    #body {
+        background-image: url(./Assets/Intro\ Android\ \(1\).png);
+    }
+
+    #see-more {
+        --bs-btn-padding-y: .2rem; 
+        --bs-btn-padding-x: .8rem; 
+        --bs-btn-font-size: .1000; 
+    }
+
+    .castle-img {
+        display: none;
+    }
+
+}
+
+@media screen and (width >= 768px) and (width < 1024px) {
+    #title {
+        padding: 5%;
+        padding-top: 10%;
+    }
+
+    #box {
+        padding: 10%; 
+        padding-top: 0%;
+        
+    }
+
+    #descrip {
+        padding-top: 2%;
+    }
+
+    #body {
+        background-image: url(./Assets/Intro\ Castillo\ 1.png);
+    }
+
+    #see-more {
+        --bs-btn-padding-y: .8rem; 
+        --bs-btn-padding-x: 5rem; 
+        --bs-btn-font-size: .1000; 
+    }
+
+    .castle-img {
+        display: none;
+    }
+
+    
+    .carousel-back1 {
+        background: url("./Assets/Landing\ Page\ Castle\ 1.png") no-repeat;
+        background-size: cover;
+        height: 100vh;
+        
+    }
+
+    .carousel-back2 {
+        background: url("./Assets/Landing\ Page\ Castle\ 2.png") no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .carousel-back3 {
+        background: url("./Assets/Landing\ Page\ Castle\ 3.png") no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .carousel-box1 {
+        padding: 10%; 
+        text-align: center;
+        color: white; 
+        margin: 15%;  
+        margin-top: 20%;
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+
+    .host-box {
+        margin: 10%;
+        margin-top: 5%;
+    }
+
+    .host-title {
+        font-size: 3rem;
+    }
+
+    .host-descript {
+        font-size: 30px;
+    }
+
+    .event {
+        background-color: rgba(0, 0, 0, 0.80);
+        padding: 10%;
+        margin: 1%;
+        width: 500px;
+    }
+
+    .event-box {
+        color: white;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+
+
+}
+
+@media screen and (width >= 1024px) and (width < 1440px)  {
+    #title {
+        padding: 20%;
+        padding-top: 30%;
+    }
+
+    #box {
+        padding: 10%; 
+        padding-left: 0%;
+        
+    }
+
+    #descrip {
+        padding-top: 5%;
+        
+    }
+
+    #body {
+        background-image: url(./Assets/Intro\ Castillo\ 1.png);
+    }
+
+    #see-more {
+        --bs-btn-padding-y: .9rem; 
+        --bs-btn-padding-x: 6rem; 
+        --bs-btn-font-size: .1000;  
+    }
+
+    .img-container {
+        align-items: center;
+    }
+
+    .castle-container {
+        padding-top: 10%;
+    }
+
+    .mysteries-background {
+        background-image: url(./Assets/Castle\ Wall\ 1.png);
+
+    }
+
+    .carousel-box1 {
+        padding: 8%;
+        text-align: center;
+        color: white;
+        margin: 15%;
+        margin-top: 10%;
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+
+    .carousel-back1 {
+        background: url("./Assets/Landing\ Page\ Castle\ 1.png") no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .carousel-back2 {
+        background: url("./Assets/Landing\ Page\ Castle\ 2.png") no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .carousel-back3 {
+        background: url("./Assets/Landing\ Page\ Castle\ 3.png") no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .host-box {
+        margin: 5%;
+        margin-top: 0%;
+    }
+
+    .host-container {
+        width: auto;
+        margin: 15%;
+        margin-bottom: 0%;
+    }
+
+    .host-title {
+        font-size: 3rem;
+    }
+
+    .host-descript {
+        font-size: 30px;
+    }
+
+    .event {
+        background-color: rgba(0, 0, 0, 0.80);
+        padding: 5%;
+        margin: 1%;
+        width: 200px;
+    }
+
+}
+
+@media screen and (width >= 1440px) {
+    #title {
+        padding: 15%;
+        padding-top: 20%;
+    }
+
+    #box {
+        padding: 5%;
+        padding-top: 7%;  
+        padding-left: 0%;
+        width: 492px;
+        
+    }
+
+    #descrip {
+        font-size: 20px;
+        padding-top: 5%;
+       
+    }
+
+    #body {
+        background-image: url(./Assets/Intro\ Castillo\ 1.png);
+    }
+
+    #see-more {
+        --bs-btn-padding-y: .9rem; 
+        --bs-btn-padding-x: 6rem; 
+        --bs-btn-font-size: 1rem;  
+    }
+
+    .carousel-back1 {
+        background: url("./Assets/Landing\ Page\ Castle\ 1.png") no-repeat;
+        background-size: cover;
+        height: 100vh;
+        
+    }
+
+    .carousel-box1 {
+        padding: 8%;
+        text-align: center;
+        color: white;
+        margin: 15%;
+        margin-top: 10%;
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+
+    .landing-descrip {
+        font-size: 25px;
+    }
+
+    .host-box {
+        margin: 5%;
+        margin-top: 5%;
+    }
+
+    .host {
+        padding: 3%;
+    }
+
+    .host-container {
+        width: auto;
+        margin: 10%;
+        margin-bottom: 0%;
+    }
+
+    .host-title {
+        font-size: 4rem;
+    }
+
+    .host-descript {
+        font-size: 50px;
+    }
+
+    .carousel-back2 {
+        background: url("./Assets/Landing\ Page\ Castle\ 2.png") no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .carousel-back3 {
+        background: url("./Assets/Landing\ Page\ Castle\ 3.png") no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+
+
+
+}
