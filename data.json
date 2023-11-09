@@ -1,17 +1,29 @@
 {
     "mysteries": [
       {
-        "Title": "The Library"
+        "Title": "Library",
+        "Poster": "./Assets/Castle Stairs 1.png",
+        "Plot": "Within the library's hallowed walls, Meerah unravels the cryptic tomes, unveiling the forgotten pact between Azaroth and a long-lost soul, intertwining fate, and revealing the castle's darkest secret."
       }, {
-        "Title": "The Hall"
+        "Title": "Hall",
+        "Poster": "./Assets/The Hall.png",
+        "Plot": "In the grand hall's shadows, Meerah deciphers arcane symbols, triggering an ethereal portal. As echoes of a tragic past resound, the veil between realms thins, unearthing Azaroth's deepest secrets."
       }, {
-        "Title": "The Ballroom"
+        "Title": "Ballroom",
+        "Poster": "./Assets/The Ballroom.png",
+        "Plot": "The ballroom's haunting elegance conceals a spectral dance of trapped souls. Meerah, guided by ghostly whispers, unravels the tragic tale, exposing a curse that binds them to eternal waltz."
       }, {
-        "Title": "The Dining Room"
+        "Title": "DiningRoom",
+        "Poster": "./Assets/The Dining Room.png",
+        "Plot": "In the dining room's opulence, Meerah unearths a banquet of spectral echoes. Each phantom feast reveals a fragment of Azaroth's tragic history, as the walls whisper tales of betrayal and revenge."
       }, {
-        "Title": "The Stairs"
+        "Title": "Stairs",
+        "Poster": "./Assets/The Stairs.png",
+        "Plot": "The winding stairs echo with forgotten whispers as Meerah ascends, unveiling hidden passages and ethereal visions. Each step reveals the castle's tangled history, leading her closer to Azaroth's secret chamber."
       }, {
-        "Title": "The Studio"
+        "Title": "Studio",
+        "Poster": "./Assets/The Studio.png",
+        "Plot": "In the music studio's haunting melody, Meerah unravels a symphony of lost memories. Ghostly notes unveil Azaroth's tragic past, intertwining with Meerah's fate, as she inches closer to the castle's heart."
       }
     ]
 }

@@ -1,9 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Poppins:wght@400;600;700&display=swap');
+* {
+    font-family: 'Antic Didone', serif;
+    font-family: 'Antic Slab', serif;
+    font-family: 'Poppins', sans-serif;
+}
 
 .row {
     margin: 10%;
     justify-content: center;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 20px;
+}
+
 
 nav {
     display: flex;
@@ -12,7 +39,7 @@ nav {
     padding-top: 20px;
     padding-left: 5%;
     padding-right: 0%;
- 
+
 }
 
 ul {
@@ -27,7 +54,7 @@ ul {
 ul li {
     display: inline-block;
     padding: 0px 20px;
-    
+
 
 }
 
@@ -48,23 +75,109 @@ a:hover {
     align-items: center;
 }
 
-.image_full{
-    display:block;
+.image_full {
+    display: block;
 }
- 
+
 .image_mobile {
-   display:none;
+    display: none;
 
 }
 
 .carousel-box1 {
-    padding: 8%; 
+    padding: 8%;
     text-align: center;
-    color: white; 
-    margin: 15%; 
-    margin-top: 30%;
+    color: white;
+    margin: 15%;
+    margin-top: 10%;
+    font-size: 14px;
     background-color: rgba(0, 0, 0, 0.80);
 }
+
+.mystery-card {
+    background-color: rgba(250, 250, 250, 0.80);
+    width: 300px;
+    height: 300px;
+    margin: 5%;
+}
+
+.mysteries-border {
+    background-color: rgba(250, 250, 250, 0.80);
+    width: 160px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.mysteries-box {
+    background-color: white;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.page-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.The-mysteries {
+    font-size: 20px;
+    margin: 0%;
+}
+
+.mystery-title {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.mystery-text {
+    font-size: 50px;
+    font-size: 11px;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.mysterie-img {
+    border-radius: 20px;
+    width: 90%;
+    height: 90%;
+
+}
+
+.mysterie-img-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+
+}
+
+.mystery-descript-container {
+    background-color: rgba(250, 250, 250, 0.80);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    width: 75%;
+    height: 75%;
+    text-align: center;
+
+}
+
 
 .landing-title {
     padding: 10px;
@@ -111,40 +224,62 @@ a:hover {
 .event-box {
     color: white;
     text-align: center;
-    
+
 }
 
 .event {
     background-color: rgba(0, 0, 0, 0.80);
     padding: 10%;
-    margin: 15%;
+    margin: 7%;
 }
 
-.front, back {
+.front,
+.back {
     height: 100%;
     width: 100%;
     position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    font-size: 7px;
 }
 
 .flip-card {
     position: relative;
     transition: transform 1500ms;
-}
-
-.flip-card, .flip-container {
-    height: 100%;
+    transform-style: preserve-3d;
+    align-content: center;
     width: 100%;
+    height: auto;
+    border: rgba(0, 0, 0, 0.80) 5px solid;
+    border-radius: 50%;
+    font-size: 10px;
 }
 
-.flip-container:hover > .flip-card {
+.flip-card,
+.flip-container {
+    height: 130px;
+    width: 130px;
+}
+
+.flip-container:hover>.flip-card {
     transform: rotateY(180deg);
 }
 
 .back {
     transform: rotateY(180deg);
+    background-color: rgba(0, 0, 0, 0.80);
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media screen and (width >= 375px) and (width < 425px) {
+@media screen and (width >=375px) and (width < 425px) {
 
     .host-box {
         margin: 30%;
@@ -157,16 +292,58 @@ a:hover {
         margin-top: 2%;
     }
 
-}
+    .mystery-card {
+        background-color: rgba(250, 250, 250, 0.80);
+        width: 350px;
+        height: 350px;
+        margin: 5%;
+    }
 
-@media screen and (width >= 425px) and (width < 768px) {
+    .mystery-title {
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    .mystery-text {
+        font-size: 50px;
+        font-size: 13px;
+        padding: 15px;
+        padding-top: 0px;
+    }
+
+    .host {
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .event {
+        background-color: rgba(0, 0, 0, 0.80);
+        padding: 10%;
+        margin: 10%;
+    }
 
     .carousel-box1 {
-        padding: 11%; 
+        padding: 8%;
         text-align: center;
-        color: white; 
-        margin: 15%;  
-        margin-top: 25%;
+        color: white;
+        margin: 15%;
+        margin-top: 20%;
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+
+}
+
+@media screen and (width >=425px) and (width < 768px) {
+
+    .carousel-box1 {
+        padding: 8%;
+        text-align: center;
+        color: white;
+        margin: 15%;
+        margin-top: 20%;
+        font-size: 15px;
         background-color: rgba(0, 0, 0, 0.80);
     }
 
@@ -181,6 +358,37 @@ a:hover {
         margin-top: 0%;
     }
 
+    .mystery-card {
+        background-color: rgba(250, 250, 250, 0.80);
+        width: 400px;
+        height: 400px;
+        margin: 5%;
+    }
+
+    .mystery-title {
+        font-size: 25px;
+        padding-top: 25px;
+    }
+
+    .mystery-text {
+        font-size: 50px;
+        font-size: 15px;
+        padding: 15px;
+        padding-top: 0px;
+    }
+
+    .host {
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .event {
+        background-color: rgba(0, 0, 0, 0.80);
+        padding: 10%;
+        margin: 10%;
+    }
+
 }
 
 
@@ -188,15 +396,18 @@ a:hover {
     #title {
         padding: 10%;
         padding-top: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #box {
-        padding: 10%; 
+        padding: 10%;
         padding-top: 0%;
     }
 
     #descrip {
-        padding: 10%; 
+        padding: 10%;
         padding-top: 0%;
     }
 
@@ -205,27 +416,36 @@ a:hover {
     }
 
     #see-more {
-        --bs-btn-padding-y: .2rem; 
-        --bs-btn-padding-x: .8rem; 
-        --bs-btn-font-size: .1000; 
+        --bs-btn-padding-y: .2rem;
+        --bs-btn-padding-x: .8rem;
+        --bs-btn-font-size: .1000;
     }
 
     .castle-img {
         display: none;
     }
 
+    .mysteries-background {
+        background-image: url(./Assets/Castle\ Wall\ 1.png);
+
+    }
+
+
 }
 
-@media screen and (width >= 768px) and (width < 1024px) {
+@media screen and (width >=768px) and (width < 1024px) {
     #title {
         padding: 5%;
-        padding-top: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
 
     #box {
-        padding: 10%; 
+        padding: 10%;
         padding-top: 0%;
-        
+
     }
 
     #descrip {
@@ -237,21 +457,21 @@ a:hover {
     }
 
     #see-more {
-        --bs-btn-padding-y: .8rem; 
-        --bs-btn-padding-x: 5rem; 
-        --bs-btn-font-size: .1000; 
+        --bs-btn-padding-y: .8rem;
+        --bs-btn-padding-x: 5rem;
+        --bs-btn-font-size: .1000;
     }
 
     .castle-img {
         display: none;
     }
 
-    
+
     .carousel-back1 {
         background: url("./Assets/Landing\ Page\ Castle\ 1.png") no-repeat;
         background-size: cover;
         height: 100vh;
-        
+
     }
 
     .carousel-back2 {
@@ -267,10 +487,12 @@ a:hover {
     }
 
     .carousel-box1 {
-        padding: 10%; 
+        padding: 10%;
+        width: 70%;
+        height: 60%;
         text-align: center;
-        color: white; 
-        margin: 15%;  
+        color: white;
+        margin: 15%;
         margin-top: 20%;
         background-color: rgba(0, 0, 0, 0.80);
     }
@@ -290,36 +512,112 @@ a:hover {
 
     .event {
         background-color: rgba(0, 0, 0, 0.80);
-        padding: 10%;
-        margin: 1%;
+        padding: 5%;
+        margin: 2%;
         width: 500px;
     }
 
     .event-box {
         color: white;
         text-align: center;
-        margin-top: 5%;
+        /* margin-top: 5%; */
+        width: 100%;
+        height: 70%;
+        padding-right: 20%;
+        /* display: flex; */
+        /* align-items: center; */
     }
+
+    .mysteries-background {
+        background-image: url(./Assets/Castle\ Wall\ 1.png);
+
+    }
+
+    .mystery-card {
+        background-color: rgba(250, 250, 250, 0.80);
+        width: 400px;
+        height: 500px;
+        margin: 5%;
+    }
+
+    .mystery-title {
+        font-size: 30px;
+        padding-top: 25px;
+    }
+
+    .mystery-text {
+        font-size: 50px;
+        font-size: 20px;
+        padding: 15px;
+        padding-top: 0px;
+    }
+
+    .mysteries-border {
+        background-color: rgba(250, 250, 250, 0.80);
+        width: 300px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .The-mysteries {
+        font-size: 25px;
+        margin: 0%;
+    }
+
+    .host {
+        margin: 9%;
+        height: 90px;
+        width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flip-card, .flip-container {
+        height: 200px;
+        width: 200px;
+    }
+
+    .front,
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    font-size: 10px;
+}
+
 
 
 
 }
 
-@media screen and (width >= 1024px) and (width < 1440px)  {
+@media screen and (width >=1024px) and (width < 1440px) {
     #title {
         padding: 20%;
-        padding-top: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .meerah {
+        font-size: 100px;
     }
 
     #box {
-        padding: 10%; 
+        padding: 10%;
         padding-left: 0%;
-        
+
     }
 
     #descrip {
         padding-top: 5%;
-        
+
     }
 
     #body {
@@ -327,9 +625,9 @@ a:hover {
     }
 
     #see-more {
-        --bs-btn-padding-y: .9rem; 
-        --bs-btn-padding-x: 6rem; 
-        --bs-btn-font-size: .1000;  
+        --bs-btn-padding-y: .9rem;
+        --bs-btn-padding-x: 6rem;
+        --bs-btn-font-size: .1000;
     }
 
     .img-container {
@@ -394,30 +692,104 @@ a:hover {
     .event {
         background-color: rgba(0, 0, 0, 0.80);
         padding: 5%;
-        margin: 1%;
-        width: 200px;
+        width: 250px;
     }
+
+    .row {
+        margin: 0%;
+    }
+
+    .mystery-card {
+        background-color: rgba(250, 250, 250, 0.80);
+        width: 250px;
+        height: 350px;
+        margin: 2%;
+    }
+
+    .mystery-title {
+        font-size: 25px;
+        padding-top: 11px;
+    }
+
+    .mystery-text {
+        font-size: 50px;
+        font-size: 12px;
+        padding: 15px;
+        padding-top: 0px;
+    }
+
+    .mysteries-border {
+        background-color: rgba(250, 250, 250, 0.80);
+        width: 160px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10%;
+        margin-bottom: 5%;
+    }
+
+    .landing-container,
+    .see-more-container {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .box-margin {
+        margin: 10%;
+        margin-top: 10%;
+    }
+
+    .host {
+        margin: 9%;
+        height: 90px;
+        width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flip-card, .flip-container {
+        height: 250px;
+        width: 250px;
+    }
+
+    .front,
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    font-size: 15px;
+}
+
+
 
 }
 
-@media screen and (width >= 1440px) {
+@media screen and (width >=1440px) {
+
     #title {
         padding: 15%;
-        padding-top: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
     #box {
         padding: 5%;
-        padding-top: 7%;  
+        padding-top: 7%;
         padding-left: 0%;
         width: 492px;
-        
+
     }
 
     #descrip {
         font-size: 20px;
         padding-top: 5%;
-       
+
     }
 
     #body {
@@ -425,16 +797,16 @@ a:hover {
     }
 
     #see-more {
-        --bs-btn-padding-y: .9rem; 
-        --bs-btn-padding-x: 6rem; 
-        --bs-btn-font-size: 1rem;  
+        --bs-btn-padding-y: .9rem;
+        --bs-btn-padding-x: 6rem;
+        --bs-btn-font-size: 1rem;
     }
 
     .carousel-back1 {
         background: url("./Assets/Landing\ Page\ Castle\ 1.png") no-repeat;
         background-size: cover;
         height: 100vh;
-        
+
     }
 
     .carousel-box1 {
@@ -485,6 +857,90 @@ a:hover {
         height: 100vh;
     }
 
+    .row {
+        margin: 0%;
+    }
+
+    .mystery-card {
+        background-color: rgba(250, 250, 250, 0.80);
+        width: 300px;
+        height: 400px;
+        margin: 2%;
+    }
+
+    .mystery-title {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+
+    .mystery-text {
+        font-size: 50px;
+        font-size: 15px;
+        padding: 15px;
+        padding-top: 0px;
+    }
+
+    .mysteries-background {
+        background-image: url(./Assets/Castle\ Wall\ 1.png);
+
+    }
+
+    .mysteries-border {
+        background-color: rgba(250, 250, 250, 0.80);
+        width: 160px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10%;
+        margin-bottom: 5%;
+    }
+
+    .landing-container,
+    .see-more-container {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .box-margin {
+        margin: 10%;
+        margin-top: 10%;
+    }
+
+    .event {
+        background-color: rgba(0, 0, 0, 0.80);
+        padding: 5%;
+        width: 250px;
+        margin: 10%;
+    }
+
+    .host {
+        margin: 9%;
+        height: 90px;
+        width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flip-card, .flip-container {
+        height: 300px;
+        width: 300px;
+    }
+
+    .front,
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    font-size: 18px;
+}
+
+.meerah {
+    font-size: 100px;
+}
 
 
 

@@ -7,6 +7,8 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Antic+Slab&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -28,15 +30,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Landing</a>
-                    <a class="nav-link" href="#">Castle</a>
-                    <a class="nav-link" href="#">Mysteries</a>
+                    <a class="nav-link active" href="http://127.0.0.1:5500/index.html">Landing</a>
+                    <a class="nav-link" href="http://127.0.0.1:5500/index2.html">Castle</a>
+                    <a class="nav-link" aria-current="page" href="#">Mysteries</a>
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </div>
             </div>
         </div>
     </nav>
 
+    <section class="page-title">
+        <div class="mysteries-border">
+            <div class="mysteries-box">
+                <h1 class="The-mysteries">MYSTERIES</h1>
+            </div>
+        </div>
+    </section>
 
     <section class="search-container">
         <div class="search-bar">
@@ -44,31 +53,86 @@
             <button>Buscar</button>
         </div>
     </section>
+
     <section class="mysteries-container">
-        <div class="row carousel-box mysteries-cards" style="color: white; margin: 0%;">
-            <div class="col-lg-4 the-library" style="background-color: rgba(255, 255, 255, 0.80);">
-                <div class="img-background">
-                    <div class="card-container" style="margin: 20px;">
-                        <div class="card-title" style="background-color:  rgba(255, 255, 255, 0.80); margin: 10px;">
-                            <h2>Meerah</h2>
-                        </div>
-                        <div class="card-content"></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis sit, autem,
-                            quae
-                            libero ducimus suscipit quos quis voluptates ex iste voluptas culpa reprehenderit voluptatem
-                            nesciunt. Excepturi ipsa nostrum fugit?</p>
+        <div class="container-mysteries">
+            <div class="row mcard-container">
+              <div class="col-12 col-lg-4 mystery-card">
+                <div class="mysterie-img-container">
+                    <img class="mysterie-img" src="./Assets/Castle Stairs 1.png" alt="">
+                    <div class="mystery-descript-container">
+                        <div><h2 class="mystery-title">Library</h2></div>
+                        <div><p class="mystery-text">Within the library's hallowed walls, Meerah unravels the cryptic tomes, unveiling the forgotten pact between Azaroth and a long-lost soul, intertwining fate, and revealing the castle's darkest secret.</p></div>
                     </div>
                 </div>
+              </div>
+              <div class="col-12 col-lg-4 mystery-card">
+                <div class="mysterie-img-container">
+                    <img class="mysterie-img" src="./Assets/The Hall.png" alt="">
+                    <div class="mystery-descript-container">
+                        <div><h2 class="mystery-title">Hall</h2></div>
+                        <div><p class="mystery-text">In the grand hall's shadows, Meerah deciphers arcane symbols, triggering an ethereal portal. As echoes of a tragic past resound, the veil between realms thins, unearthing Azaroth's deepest secrets.</p></div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mystery-card">
+                <div class="mysterie-img-container">
+                    <img class="mysterie-img" src="./Assets/The Ballroom.png" alt="">
+                    <div class="mystery-descript-container">
+                        <div><h2 class="mystery-title">Ballroom</h2></div>
+                        <div><p class="mystery-text">The ballroom's haunting elegance conceals a spectral dance of trapped souls. Meerah, guided by ghostly whispers, unravels the tragic tale, exposing a curse that binds them to eternal waltz.</p></div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mystery-card">
+                <div class="mysterie-img-container">
+                    <img class="mysterie-img" src="./Assets/The Dining Room.png" alt="">
+                    <div class="mystery-descript-container">
+                        <div><h2 class="mystery-title">DiningRoom</h2></div>
+                        <div><p class="mystery-text">In the dining room's opulence, Meerah unearths a banquet of spectral echoes. Each phantom feast reveals a fragment of Azaroth's tragic history, as the walls whisper tales of betrayal and revenge.</p></div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mystery-card">
+                <div class="mysterie-img-container">
+                    <img class="mysterie-img" src="./Assets/The Stairs.png" alt="">
+                    <div class="mystery-descript-container">
+                        <div><h2 class="mystery-title">Stairs</h2></div>
+                        <div><p class="mystery-text">The winding stairs echo with forgotten whispers as Meerah ascends, unveiling hidden passages and ethereal visions. Each step reveals the castle's tangled history, leading her closer to Azaroth's secret chamber.</p></div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mystery-card">
+                <div class="mysterie-img-container">
+                    <img class="mysterie-img" src="./Assets/The Studio.png" alt="">
+                    <div class="mystery-descript-container">
+                        <div><h2 class="mystery-title">Studio</h2></div>
+                        <div><p class="mystery-text">In the music studio's haunting melody, Meerah unravels a symphony of lost memories. Ghostly notes unveil Azaroth's tragic past, intertwining with Meerah's fate, as she inches closer to the castle's heart.</p></div>
+                    </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="col-lg-4" style="padding: 10%; font-size: 20px;">
-        </div>
         </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="./index.js" type="module"></script>
+
+    <footer>
+        <div class="footer-container">
+          <div>
+            <h2 class="footer-title">MEERAH</h2>
+          </div>
+          <div class="items">
+            <img src="./Assets/Tik tok Icon 1.png" style="width: 25px; height: 25px;" alt="">
+            <img src="./Assets/youtube-logo-icone-noir 1.png" style="width: 25px; height: 25px;" alt="">
+            <img src="./Assets/Instagram Icon 1.png" style="width: 25px; height: 25px;" alt="">
+          </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
